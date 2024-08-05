@@ -20,7 +20,7 @@ from rest_framework.routers import DefaultRouter
 from api.views import PersonModelViewset
 from rest_framework_simplejwt.views import TokenObtainPairView,TokenRefreshView,TokenVerifyView    
 router=DefaultRouter()
-router.register(r'person',PersonModelViewset,basename='person')
+router.register(r'',PersonModelViewset,basename='person')
 urlpatterns=router.urls
 
 urlpatterns = [

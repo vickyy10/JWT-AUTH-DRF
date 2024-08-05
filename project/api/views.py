@@ -4,6 +4,7 @@ from .models import Person
 from .serializer import PersonSerializer
 from rest_framework.permissions import IsAuthenticated
 from rest_framework_simplejwt.authentication import JWTAuthentication
+from rest_framework.views import APIView
 
 
 # Create your views here.
@@ -16,6 +17,8 @@ class PersonModelViewset(viewsets.ModelViewSet):
 
     authentication_classes=[JWTAuthentication]
     permission_classes=[IsAuthenticated]
+
+
 
 
     
